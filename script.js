@@ -112,7 +112,7 @@ function startTimer(time) {
     longBreakCounter++;
   }
   
-  let totalSeconds = time;
+  let totalSeconds = time * 60;
   let timer = setInterval(() => {
     totalSeconds--;
 
