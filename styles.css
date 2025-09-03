@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    color: #191415;
+}
+
+.container-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: #715A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-wrapper,
+.continue-prompt-wrapper,
+.custom-timer-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: #715A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.choice-card,
+.timer-card {
+    height: 90%;
+    width: 90%;
+    border: 1.2rem solid #191415;
+    border-radius: 2rem;
+    background-color: #D3DAD9;
+    padding: 1rem;
+    position: relative;
+}
+
+.choice-card h1 {
+    font-size: 5.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.choice-card h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.choices {
+    margin-top: 1.5rem;
+    height: 65%;
+    width: 100%;
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.choice-box {
+    height: 80%;
+    width: 20%;
+    max-width: 25%;
+    border: 12px solid #282828;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    background-color: #555569;
+    padding: 8px;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.first {
+    background-color: rgb(185, 185, 212);
+    padding-top: 20px;
+}
+.second {
+    background-color: #8787a7;
+}
+
+.custom {
+    background-color: #FEFEFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon {
+    height: 8rem;
+}
+
+.question {
+    height: 1.9rem;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: help;
+}
+
+.timer-info {
+    position: absolute;
+    background-color: #FEFEFE;
+    border-radius: 1rem 0 1rem 1rem;
+    border: 2px #282828 solid;
+    height: 8rem;
+    width: 16rem;
+    right: 8px;
+    top: 8px;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.choice-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.choice-box:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.classification {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.minutes,
+.colon,
+.seconds {
+    height: 60%;
+    font-size: 18rem;
+    margin-top: 2rem;
+}
+
+.start-btn {
+    width: 40%;
+    height: 4rem;
+    background-color: #C4AEAA;
+    color: #191415;
+    font-family: "Jua", sans-serif;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #282828;
+    color: #FEFEFE;
+    cursor: pointer;
+}
+
+.prompt-card,
+.custom-prompt {
+    height: 80%;
+    width: 60%;    
+    border: 1.2rem solid #191415;
+    border-radius: 2rem;
+    background-color: #FEFEFE;
+    padding: 1rem;
+}
+
+.status {
+    height: 30%;
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-weight: 700;
+}
+
+.buttons {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.break,
+.continue {
+    height: 5rem;
+    width: 50%;
+    font-family: "Jua", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.break {
+    background-color: #C4AEAA;
+    color: #282828;
+}
+
+.break:hover,
+.continue:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #282828;
+}
+
+.continue {
+    background-color: #282828;
+    color: #FEFEFE;
+}
+
+.minutesseconds {
+    height: 16rem;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+input {
+    height: 4rem;
+    width: 16rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 4px solid #282828;
+    font-family: "Jua", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.custom-prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    font-family: "Jua", sans-serif;
+    width: 60%;
+    height: 6rem;
+    border-radius: 2rem;
+    background-color: #C4AEAA;
+    color: #282828;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.numberOfB {
+    position: absolute;
+    bottom: 2rem;
+}
+
+.start:hover {
+    background-color: #282828;
+    color: #FEFEFE;
+}
+
+.custom-prompt {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.disable {
+    background-color: #f1eae9;
+}
+
+.disable:hover {
+    cursor: not-allowed;
+}
+
+.description {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .choice-card {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .choice-box {
+        width: 30%;
+    }
+
+    .choices {
+        gap: 1.5rem;
+    }
+
+    .timer-info {
+        display: none;
+    }
+
+    .question {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .description {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .status {
+        font-size: 3rem;
+    }
+
+    .time input {
+        width: 10rem;
+    }
+
+    .start {
+        font-size: 1.5rem;
+    }
+}

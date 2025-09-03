@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.freepik.com/512/709/709717.png">
+    <title>Pomodoro Timer</title>
+</head>
+
+<body>
+    <div class="container-wrapper" id="container-wrapper">
+        <div class="choice-card" id="choice-card">
+            <h1>Pomodoro Timer</h1>
+            <h3>Choose your preferred timer:</h3>
+            <div class="choices" id="choices">
+                <div class="choice-box first" id="choice1">
+                    <svg viewBox="0 0 24 24" id="standard?" class="question" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11043)"> <circle cx="12" cy="11.9999" r="9" stroke="#191415" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></circle> <rect x="12" y="16" width="0.01" height="0.01" stroke="#191415" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M10.5858 7.58572C10.9754 7.1961 11.4858 7.00083 11.9965 6.99994C12.5095 6.99904 13.0228 7.1943 13.4142 7.58572C13.8047 7.97625 14 8.48809 14 8.99994C14 9.51178 13.8047 10.0236 13.4142 10.4141C13.0228 10.8056 12.5095 11.0008 11.9965 10.9999L12 11.9999" stroke="#191415" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11043"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg></h2>
+                    <div class="timer-info hidden">
+                        25 min work + 5 min break <br>
+                        Long break: 15 min after 4 cycles <br>
+                        ✅ Good for everyday productivity
+                    </div>
+                    <h2>Standard</h2>
+                    <svg viewBox="0 0 24 24" class="icon" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.6888 12.5C15.566 11.4076 17.203 8.68855 17.7794 5.98398C18.0096 4.90367 17.1046 4 16 4H8C6.89543 4 5.99038 4.90367 6.22061 5.98398C6.797 8.68855 8.43404 11.4076 10.3112 12.5C8.43404 13.5924 6.797 16.3114 6.22061 19.016C5.99038 20.0963 6.89543 21 8 21H16C17.1046 21 18.0096 20.0963 17.7794 19.016C17.203 16.3114 15.566 13.5924 13.6888 12.5Z" stroke="#191415" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <div class="description">
+                        25 min work + 5 min break <br> <br>
+                        Long break: 15 min after 4 cycles <br> <br>
+                        ✅ Good for everyday productivity
+                    </div>
+                </div>
+
+                <div class="choice-box second" id="choice2">
+                    <svg viewBox="0 0 24 24" id="extended?" class="question" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11043)"> <circle cx="12" cy="11.9999" r="9" stroke="#191415" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></circle> <rect x="12" y="16" width="0.01" height="0.01" stroke="#191415" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M10.5858 7.58572C10.9754 7.1961 11.4858 7.00083 11.9965 6.99994C12.5095 6.99904 13.0228 7.1943 13.4142 7.58572C13.8047 7.97625 14 8.48809 14 8.99994C14 9.51178 13.8047 10.0236 13.4142 10.4141C13.0228 10.8056 12.5095 11.0008 11.9965 10.9999L12 11.9999" stroke="#191415" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11043"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg></h2>
+                    <div class="timer-info hidden">
+                        50 min work + 10 min break <br>
+                        Long break: 30 min after 4 cycles <br>
+                        ✅ Good for longer concentration spans
+                    </div>
+                    <h2>Extended Focus</h2>
+                    <svg viewBox="0 0 24 24" class="icon" xmlns="http://www.w3.org/2000/svg" fill="#191415"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:none;stroke:#191415;stroke-miterlimit:10;stroke-width:1.91px;}</style> </defs> <g id="brain"> <path class="cls-1" d="M12,4.36V20.59a1.92,1.92,0,0,1-1.91,1.91,1.93,1.93,0,0,1-1.91-1.91v0a2.45,2.45,0,0,1-.48,0,3.35,3.35,0,0,1-3.34-3.34,3.19,3.19,0,0,1,.08-.7A4.29,4.29,0,0,1,3.6,8.79,3.24,3.24,0,0,1,3.41,7.7,3.34,3.34,0,0,1,6.27,4.4v0a2.87,2.87,0,0,1,5.73,0Z"></path> <path class="cls-1" d="M6.75,11.05a3.35,3.35,0,0,1,0-6.69"></path> <path class="cls-1" d="M8.18,13.91h0A3.82,3.82,0,0,1,12,17.73h0"></path> <path class="cls-1" d="M9.14,7.23h0A2.86,2.86,0,0,0,12,4.36h0"></path> <path class="cls-1" d="M12,4.36V20.59a1.92,1.92,0,0,0,1.91,1.91,1.93,1.93,0,0,0,1.91-1.91v0a2.45,2.45,0,0,0,.48,0,3.35,3.35,0,0,0,3.34-3.34,3.19,3.19,0,0,0-.08-.7,4.29,4.29,0,0,0,.84-7.76,3.24,3.24,0,0,0,.19-1.09,3.34,3.34,0,0,0-2.86-3.3v0a2.87,2.87,0,0,0-5.73,0Z"></path> <path class="cls-1" d="M17.25,11.05a3.35,3.35,0,0,0,0-6.69"></path> <path class="cls-1" d="M15.82,13.91h0A3.82,3.82,0,0,0,12,17.73h0"></path> <path class="cls-1" d="M14.86,7.23h0A2.86,2.86,0,0,1,12,4.36h0"></path> </g> </g></svg>
+                    <div class="description">
+                        50 min work + 10 min break <br> <br>
+                        Long break: 30 min after 4 cycles <br> <br>
+                        ✅ Good for longer concentration spans
+                    </div>
+                </div>
+
+                <div class="choice-box third" id="choice3">
+                    <svg viewBox="0 0 24 24" id="micro?" class="question" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11043)"> <circle cx="12" cy="11.9999" r="9" stroke="#191415" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></circle> <rect x="12" y="16" width="0.01" height="0.01" stroke="#191415" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M10.5858 7.58572C10.9754 7.1961 11.4858 7.00083 11.9965 6.99994C12.5095 6.99904 13.0228 7.1943 13.4142 7.58572C13.8047 7.97625 14 8.48809 14 8.99994C14 9.51178 13.8047 10.0236 13.4142 10.4141C13.0228 10.8056 12.5095 11.0008 11.9965 10.9999L12 11.9999" stroke="#191415" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11043"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg></h2>
+                    <div class="timer-info hidden">
+                        15 min work + 3 min break <br>
+                        Long break: 15 min after 4 cycles <br>
+                        ✅ Good for low energy or starting out
+                    </div>
+                    <h2>Micro Pomodoro</h2>
+                    <svg viewBox="0 0 18 18" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>coffee [#191415]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-421.000000, -5120.000000)" fill="#191415"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M367.028169,4964.99989 C367.587944,4964.99989 368.042254,4964.5519 368.042254,4963.99991 L368.042254,4960.99998 C368.042254,4960.44799 367.587944,4960 367.028169,4960 C366.468394,4960 366.014085,4960.44799 366.014085,4960.99998 L366.014085,4963.99991 C366.014085,4964.5519 366.468394,4964.99989 367.028169,4964.99989 L367.028169,4964.99989 Z M379.197183,4968.99981 L377.169014,4968.99981 L377.169014,4971.99974 L379.197183,4971.99974 C381.563042,4971.99974 381.563042,4968.99981 379.197183,4968.99981 L379.197183,4968.99981 Z M375.140845,4968.99981 L368.042254,4968.99981 C367.482479,4968.99981 367.028169,4969.4478 367.028169,4969.99978 L367.028169,4971.82775 C367.028169,4973.9167 368.576676,4975.78266 370.685972,4975.98066 C373.105577,4976.20865 375.140845,4974.33869 375.140845,4971.99974 L375.140845,4968.99981 Z M379.197183,4973.9997 L376.815099,4973.9997 C375.903437,4976.53864 373.316507,4978.29561 370.359437,4977.95861 C367.25938,4977.60462 365,4974.86768 365,4971.78975 L365,4968.99981 C365,4967.89483 365.907606,4966.99985 367.028169,4966.99985 L377.169014,4966.99985 L379.197183,4966.99985 C384.267606,4966.99985 384.267606,4973.9997 379.197183,4973.9997 L379.197183,4973.9997 Z M375.140845,4964.99989 C375.70062,4964.99989 376.15493,4964.5519 376.15493,4963.99991 L376.15493,4960.99998 C376.15493,4960.44799 375.70062,4960 375.140845,4960 C374.58107,4960 374.126761,4960.44799 374.126761,4960.99998 L374.126761,4963.99991 C374.126761,4964.5519 374.58107,4964.99989 375.140845,4964.99989 L375.140845,4964.99989 Z M370.070423,4963.99991 L370.070423,4960.99998 C370.070423,4960.44799 370.524732,4960 371.084507,4960 C371.644282,4960 372.098592,4960.44799 372.098592,4960.99998 L372.098592,4963.99991 C372.098592,4964.5519 371.644282,4964.99989 371.084507,4964.99989 C370.524732,4964.99989 370.070423,4964.5519 370.070423,4963.99991 L370.070423,4963.99991 Z" id="coffee-[#191415]"> </path> </g> </g> </g> </g></svg>
+                    <div class="description">
+                        15 min work + 3 min break <br> <br>
+                        Long break: 15 min after 4 cycles <br> <br>
+                        ✅ Good for low energy or starting out
+                    </div>            
+                </div>
+
+                <div class="choice-box custom" id="choice4">
+                    <svg viewBox="0 0 24 24" id="custom?" class="question" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11043)"> <circle cx="12" cy="11.9999" r="9" stroke="#191415" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></circle> <rect x="12" y="16" width="0.01" height="0.01" stroke="#191415" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M10.5858 7.58572C10.9754 7.1961 11.4858 7.00083 11.9965 6.99994C12.5095 6.99904 13.0228 7.1943 13.4142 7.58572C13.8047 7.97625 14 8.48809 14 8.99994C14 9.51178 13.8047 10.0236 13.4142 10.4141C13.0228 10.8056 12.5095 11.0008 11.9965 10.9999L12 11.9999" stroke="#191415" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11043"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg></h2>
+                    <div class="timer-info hidden">
+                        Custom Pomodoro lets you set your own work and break times, giving you full control to match your focus and energy levels.
+                    </div>
+                    <h2>Custom</h2>
+                    <svg fill="#000000" class="icon" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M30.133 1.552c-1.090-1.044-2.291-1.573-3.574-1.573-2.006 0-3.47 1.296-3.87 1.693-0.564 0.558-19.786 19.788-19.786 19.788-0.126 0.126-0.217 0.284-0.264 0.456-0.433 1.602-2.605 8.71-2.627 8.782-0.112 0.364-0.012 0.761 0.256 1.029 0.193 0.192 0.45 0.295 0.713 0.295 0.104 0 0.208-0.016 0.31-0.049 0.073-0.024 7.41-2.395 8.618-2.756 0.159-0.048 0.305-0.134 0.423-0.251 0.763-0.754 18.691-18.483 19.881-19.712 1.231-1.268 1.843-2.59 1.819-3.925-0.025-1.319-0.664-2.589-1.901-3.776zM22.37 4.87c0.509 0.123 1.711 0.527 2.938 1.765 1.24 1.251 1.575 2.681 1.638 3.007-3.932 3.912-12.983 12.867-16.551 16.396-0.329-0.767-0.862-1.692-1.719-2.555-1.046-1.054-2.111-1.649-2.932-1.984 3.531-3.532 12.753-12.757 16.625-16.628zM4.387 23.186c0.55 0.146 1.691 0.57 2.854 1.742 0.896 0.904 1.319 1.9 1.509 2.508-1.39 0.447-4.434 1.497-6.367 2.121 0.573-1.886 1.541-4.822 2.004-6.371zM28.763 7.824c-0.041 0.042-0.109 0.11-0.19 0.192-0.316-0.814-0.87-1.86-1.831-2.828-0.981-0.989-1.976-1.572-2.773-1.917 0.068-0.067 0.12-0.12 0.141-0.14 0.114-0.113 1.153-1.106 2.447-1.106 0.745 0 1.477 0.34 2.175 1.010 0.828 0.795 1.256 1.579 1.27 2.331 0.014 0.768-0.404 1.595-1.24 2.458z"></path> </g></svg>
+                    <div class="description">
+                        Custom Pomodoro lets you set your own work and break times, giving you full control to match your focus and energy levels.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timer-wrapper hidden" id="timer-wrapper">
+        <div class="timer-card">
+            <div class="classification">
+                <h1 id="classification"></h1>
+            </div>
+
+            <div class="timer-container">
+                <div class="minutes" id="minutes">
+                    30
+                </div>
+
+                <div class="colon">
+                    :
+                </div>
+
+                <div class="seconds" id="seconds">
+                    20
+                </div>
+            </div>
+            <button class="start-btn" id="start-btn">Start Timer</button>
+        </div>
+    </div>
+
+    <div class="continue-prompt-wrapper hidden" id="continue-prompt-wrapper">
+        <div class="prompt-card">
+            <div class="status">
+                Work Time done!
+            </div>
+
+            <div class="buttons">
+                Would you like to take a break or continue working?
+                <h3 id="numberOfB" class="numberOfB"></h3>
+                <button class="break" id="break">Have a break</button>
+                <button class="continue" id="continue">Continue working</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-timer-wrapper hidden" id="custom-timer-wrapper">
+        <div class="custom-prompt">
+            <span class="close" id="close">&#10006;</span>
+            <div class="status">
+                Custom Prompt
+            </div>
+
+            <div class="minutesseconds">
+                <div class="time">
+                    Minutes of Work: <input type="text" autocomplete="off" id="minutesWork" placeholder="30" required>
+                </div>
+                <div class="time">
+                    Minutes of Break: <input type="text" autocomplete="off" id="minutesBreak" placeholder="5" required>
+                </div>
+                <div class="time">
+                    Minutes of LB: <input type="text" autocomplete="off" id="longBreak" placeholder="5" required>
+                </div>
+            </div>
+
+            <button class="start" id="start-working">Start Working</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
